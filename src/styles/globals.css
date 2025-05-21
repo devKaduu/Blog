@@ -80,7 +80,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -131,5 +131,47 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-rainbow {
+    background-image: linear-gradient(
+      to bottom,
+      #ff0018 16.6%,
+      /* vermelho */ #ffa52c 16.6% 33.2%,
+      /* laranja */ #ffff41 33.2% 49.8%,
+      /* amarelo */ #008018 49.8% 66.4%,
+      /* verde */ #0000f9 66.4% 83%,
+      /* azul */ #86007d 83% 100% /* roxo */
+    );
+  }
+
+  .text-outline {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .text-rainbow {
+    background-image: linear-gradient(
+      to right,
+      #ff0018,
+      /* vermelho */ #ffa52c,
+      /* laranja */ #ffff41,
+      /* amarelo */ #008018,
+      /* verde */ #0000f9,
+      /* azul */ #86007d /* roxo */
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-rainbow-hover {
+    background-image: linear-gradient(to right, #ff0018, #ffa52c, #ffff41, #008018, #0000f9, #86007d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
   }
 }

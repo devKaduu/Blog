@@ -11,7 +11,7 @@ export function ActiveLink({ children, href, ...rest }: ActiveLinkProps) {
   const isCurrentPath = router.asPath === href || router.asPath === rest.as;
 
   return (
-    <Link href={href} className={cn("text-lg", isCurrentPath ? "text-rainbow" : "text-gray-100")}>
+    <Link href={href} className={cn("text-lg", isCurrentPath ? "text-white" : "text-gray-500")}>
       {children}
     </Link>
   );

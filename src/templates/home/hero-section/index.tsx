@@ -20,7 +20,7 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <PersonStanding className="text-white h-4 w-4" />
-                <span className="text-gray-200 text-sm sm:text-base">Somos 14. Mas podia ser menos.</span>
+                <span className="text-gray-200 text-sm sm:text-base">Pensamentos do Carlos.</span>
               </div>
             </div>
           </div>
@@ -32,13 +32,13 @@ export function HeroSection() {
               </Link>
             </Button>
             <p className="text-gray-200 text-xs sm:text-sm text-center md:text-left">
-              ver um bando de inútil tentando se levar a sério num site…
+              Não espero que você goste. Mas se se identificar, senta aí e lê.
             </p>
           </div>
         </div>
 
         <div className="relative h-[15rem] md:h-[20rem] lg:h-full hidden md:flex items-center justify-center">
-          <Image src="/som-2.png" alt="Ilustração" width={400} height={400} className="h-full w-auto object-contain" />
+          <Image src="/hero-section.png" alt="Ilustração" width={400} height={400} className="" />
         </div>
       </div>
     </section>

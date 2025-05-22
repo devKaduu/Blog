@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { ActiveLink } from "@/components/active-link";
 import { Logo } from "@/components/logo";
 
@@ -13,9 +11,6 @@ export function Header() {
           <nav className="flex items-center gap-6">
             <ActiveLink href="/">Início</ActiveLink>
             <ActiveLink href="/pensamentos">Pensamentos</ActiveLink>
-            <Button variant="default" asChild>
-              <Link href="/comecar">Começar</Link>
-            </Button>
           </nav>
         </div>
       </div>

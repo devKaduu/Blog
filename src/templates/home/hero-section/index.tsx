@@ -27,7 +27,7 @@ export function HeroSection() {
 
           <div className="text-white flex flex-col gap-2 mt-5 items-center md:items-start lg:items-start">
             <Button className="w-50 h-10" asChild>
-              <Link href="/criar-loja">
+              <Link href="/pensamentos">
                 Boa sorte <ArrowRight />
               </Link>
             </Button>
@@ -38,7 +38,7 @@ export function HeroSection() {
         </div>
 
         <div className="relative h-[15rem] md:h-[20rem] lg:h-full hidden md:flex items-center justify-center">
-          <Image src="/hero-section.png" alt="Ilustração" width={400} height={400} className="" />
+          <Image src="/hero-section.png" alt="Ilustração" width={400} height={400} />
         </div>
       </div>
     </section>
